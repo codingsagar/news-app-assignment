@@ -6,6 +6,9 @@ BUILT WITH **FIREBASE AND NEXT.JS**
 
 QuickNews is a news platform which shows you only news that matters to you.  
 
+![image](https://github.com/codingsagar/news-app-assignment/assets/68506265/220d9254-f81c-4ffd-b74d-c2176b538cb4)
+
+
 ## Features
 
 - Read news that matters to you - country,category, ...etc
