@@ -50,14 +50,18 @@ export default function SavedArticles({ searchParams: { uid } }: PropsType) {
     });
   }
 
-  return (
+  return savedArticles.length > 0 ? (
     <div className="flex flex-col gap-10 mb-10 mx-20">
       <h2 className="text-2xl text-danger-500 font-bold mt-10">
         Saved Articles - {savedArticles.length}
       </h2>
-      {savedArticles?.map((item,index) => {
-        return <NewsCard news={JSON.parse(item)} key={index}/>;
+      {savedArticles?.map((item, index) => {
+        return <NewsCard news={JSON.parse(item)} key={index} />;
       })}
+    </div>
+  ) : (
+    <div className="min-h-[70vh] text-2xl flex justify-center items-center font-bold">
+      No saved articles !
     </div>
   );
 }
