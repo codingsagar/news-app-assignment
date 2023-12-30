@@ -6,7 +6,7 @@ export default async function NewsContainer() {
   const newsData: NewsSchema[] = data.results;
 
   const content = newsData.map((item: NewsSchema) => {
-    return <NewsCard news={item} />;
+    return <NewsCard news={item} key={item.article_id}/>;
   });
 
   return <div className="flex flex-col gap-10 mb-10 mx-20">{content}</div>;

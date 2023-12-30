@@ -57,7 +57,7 @@ function Signup() {
         </div>
 
         <div className="text-grey-dark mt-6">
-          Don't have an account ?
+          Don&#39;t have an account ?
           <Link
             href="/signup"
             className="text-primary-500 mx-1 font-bold underline"

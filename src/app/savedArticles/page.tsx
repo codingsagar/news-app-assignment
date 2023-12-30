@@ -29,7 +29,7 @@ const getSavedArticles = async (uid: string) => {
   }
 };
 
-export default function savedArticles({ searchParams: { uid } }: PropsType) {
+export default function SavedArticles({ searchParams: { uid } }: PropsType) {
   const router = useRouter();
   const { isAuthenticated } = useAuthStore();
   const [savedArticles, setSavedArticles] = useState<string[]>([]);
@@ -55,8 +55,8 @@ export default function savedArticles({ searchParams: { uid } }: PropsType) {
       <h2 className="text-2xl text-danger-500 font-bold mt-10">
         Saved Articles - {savedArticles.length}
       </h2>
-      {savedArticles?.map((item) => {
-        return <NewsCard news={JSON.parse(item)} />;
+      {savedArticles?.map((item,index) => {
+        return <NewsCard news={JSON.parse(item)} key={index}/>;
       })}
     </div>
   );
