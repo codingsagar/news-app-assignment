@@ -1,7 +1,7 @@
 # QuickNews - Read News that matters to you !
 ## This is an assignment project
 
-BUILT WITH **FIREBASE AND NEXT.JS**
+BUILT WITH **FIREBASE AND NEXT.JS + NEXT UI**
 
 
 QuickNews is a news platform which shows you only news that matters to you.  
