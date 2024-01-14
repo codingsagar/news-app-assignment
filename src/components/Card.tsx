@@ -60,7 +60,7 @@ export default function NewsCard({ news }: { news: NewsSchema }) {
             {news?.title}
           </h5>
           <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 break-words">
-            {news?.description.slice(0, 300)}...
+            {news?.description?.slice(0, 300)}...
           </p>
           <p className="text-xs text-neutral-500 dark:text-neutral-300">
             {dayjs(news?.pubDate).fromNow()}
